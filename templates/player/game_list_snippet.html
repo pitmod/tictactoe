@@ -7,7 +7,7 @@
                 {{ game }}
                 {% if game.status not in 'FS' %}
                     {% if game.status == "D" %}
-                        --Draw
+                        -- Draw
                     {% elif game.status == "W" and user == game.first_player %}
                         -- You won!
                     {% elif game.status == "L" and user == game.second_player %}
