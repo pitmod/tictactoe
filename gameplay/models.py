@@ -67,8 +67,8 @@ class Game(models.Model):
 
     def _get_game_status_after_move(self, move):
         x, y = move.x, move.y
-        board  = self.board()
-        if  (board[y][0] == board[y][1] == board[y][2]) or \
+        board = self.board()
+        if (board[y][0] == board[y][1] == board[y][2]) or \
             (board[0][x] == board[1][x] == board[2][x]) or \
             (board[0][0] == board[1][1] == board[2][2]) or \
             (board[0][2] == board[1][1] == board[2][0]):

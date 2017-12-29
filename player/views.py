@@ -9,6 +9,7 @@ from .forms import InvitationForm
 from .models import Invitation
 from gameplay.models import Game
 
+
 @login_required()
 def home(request):
     my_games = Game.objects.games_for_user(request.user)
